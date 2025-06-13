@@ -23,11 +23,11 @@ abstract class HetuOtpUtilLoader {
   /// ```yaml
   /// flutter:
   ///   assets:
-  ///     - packages/hetu_otp_utl/assets/bytecode/otp_util.out
+  ///     - packages/hetu_otp_util/assets/bytecode/otp_util.out
   /// ```
   static Future<void> loadBytecodeFlutter(Hetu hetu) async {
     final byteCodeFile = await rootBundle.load(
-      'packages/hetu_otp_utl/assets/bytecode/otp_util.out',
+      'packages/hetu_otp_util/assets/bytecode/otp_util.out',
     );
     final byteCode = byteCodeFile.buffer.asUint8List();
 
